@@ -91,7 +91,7 @@ a {
   width: 2px;
   height: 2px;
   border-radius: 50%;
-  background-color: #494e62;;
+  background-color: #494e62;
 }
 
 .main-nav__item:last-child::before {
@@ -102,7 +102,6 @@ a {
   margin: 0;
   padding: 0;
   display: block;
-  vertical-align: middle;
   font-weight: 700;
   line-height: 6.32px;
   text-transform: uppercase;
@@ -121,5 +120,56 @@ a {
 
 .main-nav__link:hover,
 .main-nav__link:focus {
-  color: rgba(129, 49, 45);
+  color: rgb(129, 49, 45);
 }
+
+.slider {
+  position: relative;
+  margin-bottom: 70px;
+  background-color: #f06c64;
+  border-bottom: 15px solid #ea676b;
+}
+
+.slider__sliders {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-1 {
+  height: 483px;
+  padding: 53px 55px 43px 55px;
+  background-image: url("assets/img/slider-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 280px;
+  width: 20px;
+  height: 30px;
+  font-size: 0;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.slider__btn.slider__btn--prev {
+  left: 40px;
+  background-image: url("assets/img/chev-left.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider__btn.slider__btn--next {
+  right: 40px;
+  background-image: url("assets/img/chev-right.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
