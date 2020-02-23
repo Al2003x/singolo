@@ -109,18 +109,9 @@ a {
   color: #fff;
 }
 
-.main-nav__link.main-nav__link--active {
-  cursor: default;
-  color: #f06c64;
-}
-
-.main-nav__link.main-nav__link--active:hover {
-  color: #f06c64;
-}
-
 .main-nav__link:hover,
 .main-nav__link:focus {
-  color: rgb(129, 49, 45);
+  color: #f06c64;
 }
 
 .slider {
@@ -156,6 +147,11 @@ a {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: transparent;
+  opacity: 1;
+}
+
+.slider__btn:hover {
+  opacity: 0.5;
 }
 
 .slider__btn.slider__btn--prev {
@@ -190,7 +186,7 @@ a {
 
 .services__text {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 46px;
   font-family: Lato;
   font-size: 18px;
   font-weight: 300;
@@ -210,9 +206,9 @@ a {
 
 .services__item {
   position: relative;
-  width: 300px;
+  width: 299px;
   margin-right: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .services__item:nth-child(3n) {
@@ -221,14 +217,66 @@ a {
 
 .services__item-title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  margin-left: 80px;
   font-family: "Lato - Black";
   font-size: 18px;
   font-weight: 400;
   line-height: 17.86px;
+  letter-spacing: 0.95px;
   color: #666d89;
 }
 
 .services__item-desc {
   margin: 0;
+  margin-left: 80px;
+  letter-spacing: -0.25px;
+}
+
+.services__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  border: 2px solid #666d89;
+  border-radius: 50%;
+}
+
+.services__icon.services__icon--pen {
+  background-image: url("assets/img/pen.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services__icon.services__icon--bulb {
+  background-image: url("assets/img/bulb.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services__icon.services__icon--heart {
+  background-image: url("assets/img/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services__icon.services__icon--phone {
+  background-image: url("assets/img/phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services__icon.services__icon--bubble {
+  background-image: url("assets/img/bubble.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services__icon.services__icon--star {
+  background-image: url("assets/img/star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
