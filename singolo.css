@@ -6,7 +6,7 @@ body {
 
 body {
   min-width: 1020px;
-  font-family: Lato, Arial, san-serif;
+  font-family: "Lato", san-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 21.56px;
@@ -40,6 +40,7 @@ a {
 .logo-title {
   margin: 0;
   position: relative;
+  font-family: "Lato", sans-serif;
   font-size: 25px;
   font-weight: 700;
   line-height: 6.32px;
@@ -102,6 +103,7 @@ a {
   margin: 0;
   padding: 0;
   display: block;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   line-height: 6.32px;
   text-transform: uppercase;
@@ -116,7 +118,7 @@ a {
 
 .slider {
   position: relative;
-  margin-bottom: 68px;
+  margin-bottom: 70px;
   background-color: #f06c64;
   border-bottom: 15px solid #ea676b;
 }
@@ -176,7 +178,7 @@ a {
 .services__title {
   margin: 0;
   margin-bottom: 28px;
-  font-family: "Lato - Black";
+  font-family: "Lato - Black", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 17.86px;
@@ -186,12 +188,12 @@ a {
 
 .services__text {
   margin: 0;
-  margin-bottom: 46px;
-  font-family: Lato;
+  margin-bottom: 45px;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
-  letter-spacing: 0.44px;
+  letter-spacing: -0.5px;
   color: #767e9e;
 }
 
@@ -217,26 +219,29 @@ a {
 
 .services__item-title {
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
   margin-left: 80px;
-  font-family: "Lato - Black";
+  font-family: "Lato - Black", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 17.86px;
-  letter-spacing: 0.95px;
   color: #666d89;
 }
 
 .services__item-desc {
   margin: 0;
   margin-left: 80px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21.56px;
   letter-spacing: -0.25px;
 }
 
 .services__icon {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 2px;
   display: block;
   width: 55px;
   height: 55px;
