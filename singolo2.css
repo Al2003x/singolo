@@ -96,6 +96,8 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  max-height: 996px;
+  overflow-y: hidden;
 }
 
 .catalog-images__img {
