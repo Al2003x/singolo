@@ -1,0 +1,30 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 1020px;
+  font-family: "Lato", san-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21.56px;
+  background: #f2f2f2;
+  color: #767e9e;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
