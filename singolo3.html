@@ -1,16 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link rel="stylesheet" href="singolo3.css">
-  <title>Singolo</title>
-</head>
-<body>
-  
-</body>
+    <link rel="stylesheet" href="singolo3.css" />
+    <title>Singolo</title>
+  </head>
+  <body>
+    <section class="feedback container">
+      <h2 class="section__title section__title-feedback">Get a Quote</h2>
+      <p class="section__text section__text-feedback">
+        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
+        mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia
+        odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
+        mauris condimentum nibh.
+      </p>
+      <div class="feedback-form">
+        <form action="#" method="POST" class="feedback-form">
+          <p class="feedback-form__item">
+            <input
+              type="text"
+              class="feedback-form__input"
+              name="name"
+              value=""
+              placeholder="Name (Required)"
+            />
+          </p>
+          <p class="feedback-form__item">
+            <input
+              type="email"
+              class="feedback-form__input"
+              name="email"
+              value=""
+              placeholder="Email (Required)"
+            />
+          </p>
+          <p class="feeldback-form__item">
+            <input
+              type="text"
+              class="feedback-form__input"
+              name="subject"
+              value=""
+              placeholder="Subject"
+            />
+          </p>
+          <p class="feedback-form__item">
+            <textarea
+              name="feedback-textarea"
+              placeholder="Describe your project in detail..."
+            ></textarea>
+          </p>
+          <button class="form-btn" type="button">Submit</button>
+        </form>
+      </div>
+      <div class="feedback-contact">
+        <h2 class="feedback-contact__title">Contact Information</h2>
+        <p class="feedback-contact__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+        <ul class="feedback-contact__list">
+          <li class="feedback-contact__item">
+            <a href="#" class="feedback-contact__link feedback-contact__link-location">Elm St. 14/05 Lost City</a>
+          </li>
+          <li class="feedback-contact__item">
+            <a href="tel:035283318635" class="feedback-contact__link feedback-contact__link-tel">035283318635</a>
+          </li>
+          <li class="feedback-contact__item">
+            <a href="mailto:info@singolo.com" class="feedback-contact__link feedback-contact__link-mail">info@singolo.com</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="main-footer container">
+      <section class="footer-copyright">
+        <p class="footer-copyright__text">&copy; Copyright 2013</p>
+      </section>
+      <section class="footer-cocial">
+        <ul class="social-icons">
+          <li class="social-icons__item">
+            <a href="#" class="social-icons__btn" aria-label="facebook">
+              <img
+                src="assets/img/facebook-icon.png"
+                alt="facebook"
+                class="social-icons__btn-img"
+              />
+            </a>
+          </li>
+          <li class="social-icons__item">
+            <a href="#" class="social-icons__btn" aria-label="google">
+              <img
+                src="assets/img/google-icon.png"
+                alt="google"
+                class="social-icons__btn-img"
+              />
+            </a>
+          </li>
+          <li class="social-icons__item">
+            <a href="#" class="social-icons__btn" aria-label="twitter">
+              <img
+                src="assets/img/twitter-icon.png"
+                alt="twitter"
+                class="social-icons__btn-img"
+              />
+            </a>
+          </li>
+          <li class="social-icons__item">
+            <a href="#" class="social-icons__btn" aria-label="linkedin">
+              <img
+                src="assets/img/linkedin-icon.png"
+                alt="linkedin"
+                class="social-icons__btn-img"
+              />
+            </a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+  </body>
 </html>
