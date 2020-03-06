@@ -1,3 +1,43 @@
+/* lato-300 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"),
+    url("assets/font/lato-v16-latin-300.woff2") format("woff2"),
+    url("assets/font/lato-v16-latin-300.woff") format("woff");
+}
+/* lato-regular - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url("assets/font/lato-v16-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("assets/font/lato-v16-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"),
+    url("assets/font/lato-v16-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("assets/font/lato-v16-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+  font-family: "Lato-Black";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Lato Black"), local("Lato-Black"),
+    url("assets/font/lato-v16-latin-900.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("assets/font/lato-v16-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 html,
 body {
   margin: 0;
@@ -31,7 +71,7 @@ a {
 
 .portfolio {
   padding-top: 70px;
-  padding-bottom: 55px;
+  padding-bottom: 53px;
   background-color: #2d303a;
   border-bottom: 6px #323746;
 }
@@ -43,7 +83,6 @@ a {
   font-size: 30px;
   font-weight: 400;
   line-height: 17.86px;
-  letter-spacing: 2.2px;
   color: #666d89;
 }
 
@@ -53,7 +92,6 @@ a {
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
-  letter-spacing: 0.2px;
 }
 
 .portfolio-breadcrambs__list {
@@ -74,7 +112,7 @@ a {
 }
 
 .portfolio-breadcrumbs__link {
-  padding: 8px;
+  padding: 8px 6px;
   color: #767e9e;
 }
 
@@ -103,7 +141,7 @@ a {
 .catalog-images__img {
   width: 220px;
   margin-right: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .catalog-images__img:nth-child(4n) {
@@ -111,20 +149,19 @@ a {
 }
 
 .about-us {
-  padding-top: 70px;
+  padding-top: 68px;
   padding-bottom: 65px;
   background-color: #f2f2f2;
   border-bottom: 6px solid #ffffff;
 }
 
 .section__text.section__text-about {
-  margin-bottom: 45px;
+  margin-bottom: 43px;
 }
 
 .about-us__catalog {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -138,7 +175,7 @@ a {
 }
 
 .about-us__photo {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .about-us__title {
@@ -154,7 +191,6 @@ a {
 .about-us__text {
   margin: 0;
   margin-bottom: 24px;
-  letter-spacing: 0.32px;
 }
 
 .social-icons {
