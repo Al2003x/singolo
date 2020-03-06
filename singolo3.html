@@ -19,65 +19,83 @@
         odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
         mauris condimentum nibh.
       </p>
-      <div class="feedback-form">
-        <form action="#" method="POST" class="feedback-form">
-          <p class="feedback-form__item">
+      <div class="feedback-columns">
+        <form action="#" method="POST" class="form">
+          <p class="form__item">
             <input
               type="text"
-              class="feedback-form__input"
+              class="form__input"
               name="name"
               value=""
               placeholder="Name (Required)"
             />
           </p>
-          <p class="feedback-form__item">
+          <p class="form__item">
             <input
               type="email"
-              class="feedback-form__input"
+              class="form__input"
               name="email"
               value=""
               placeholder="Email (Required)"
             />
           </p>
-          <p class="feeldback-form__item">
+          <p class="form__item">
             <input
               type="text"
-              class="feedback-form__input"
+              class="form__input"
               name="subject"
               value=""
               placeholder="Subject"
             />
           </p>
-          <p class="feedback-form__item">
+          <p class="form__item">
             <textarea
+              class="form__input form__input-textarea"
               name="feedback-textarea"
               placeholder="Describe your project in detail..."
             ></textarea>
           </p>
-          <button class="form-btn" type="button">Submit</button>
+          <button class="form__btn" type="button">Submit</button>
         </form>
-      </div>
-      <div class="feedback-contact">
-        <h2 class="feedback-contact__title">Contact Information</h2>
-        <p class="feedback-contact__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
-        <ul class="feedback-contact__list">
-          <li class="feedback-contact__item">
-            <a href="#" class="feedback-contact__link feedback-contact__link-location">Elm St. 14/05 Lost City</a>
-          </li>
-          <li class="feedback-contact__item">
-            <a href="tel:035283318635" class="feedback-contact__link feedback-contact__link-tel">035283318635</a>
-          </li>
-          <li class="feedback-contact__item">
-            <a href="mailto:info@singolo.com" class="feedback-contact__link feedback-contact__link-mail">info@singolo.com</a>
-          </li>
-        </ul>
+        <div class="feedback-contact">
+          <h2 class="feedback-contact__title">Contact Information</h2>
+          <p class="feedback-contact__text">
+            Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
+            Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla
+            sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
+            consequat felis.
+          </p>
+          <ul class="feedback-contact__list">
+            <li class="feedback-contact__item">
+              <a
+                href="#"
+                class="feedback-contact__link feedback-contact__link--location"
+                >Elm St. 14/05 Lost City</a
+              >
+            </li>
+            <li class="feedback-contact__item">
+              <a
+                href="tel:035283318635"
+                class="feedback-contact__link feedback-contact__link--tel"
+                >035283318635</a
+              >
+            </li>
+            <li class="feedback-contact__item">
+              <a
+                href="mailto:info@singolo.com"
+                class="feedback-contact__link feedback-contact__link--mail"
+                >info@singolo.com</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <footer class="main-footer container">
       <section class="footer-copyright">
         <p class="footer-copyright__text">&copy; Copyright 2013</p>
       </section>
-      <section class="footer-cocial">
+      <section class="footer-social">
         <ul class="social-icons">
           <li class="social-icons__item">
             <a href="#" class="social-icons__btn" aria-label="facebook">
