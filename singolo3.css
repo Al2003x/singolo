@@ -1,3 +1,42 @@
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"),
+    url("assets/font/lato-v16-latin-300.woff2") format("woff2"),
+    url("assets/font/lato-v16-latin-300.woff") format("woff");
+}
+/* lato-regular - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url("assets/font/lato-v16-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("assets/font/lato-v16-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"),
+    url("assets/font/lato-v16-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("assets/font/lato-v16-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+  font-family: "Lato-Black";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Lato Black"), local("Lato-Black"),
+    url("assets/font/lato-v16-latin-900.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("assets/font/lato-v16-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 html,
 body {
   margin: 0;
@@ -31,28 +70,27 @@ a {
 
 .feedback {
   padding-top: 70px;
-  padding-bottom: 67px;
+  padding-bottom: 13px;
   background-color: #f06c64;
   border-bottom: 6px solid #ea676b;
 }
 
 .section__title.section__title-feedback {
   margin: 0;
-  margin-bottom: 27px;
-  font-family: "Lato - Black";
+  margin-bottom: 25px;
+  font-family: "Lato-Black";
   font-size: 30px;
   font-weight: 400;
   line-height: 17.86px;
-  letter-spacing: 2.2px;
   color: #f0d8d9;
 }
 
 .section__text-feedback.section__text-feedback {
-  margin-bottom: 42px;
+  margin-bottom: 45px;
+  text-align: justify;
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
-  letter-spacing: 0.2px;
   color: #f0d8d9;
 }
 
@@ -69,18 +107,23 @@ a {
 .form__item {
   width: 620px;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 }
 
 .form__input {
   width: 100%;
-  padding: 10px 15px;
+  padding: 9px 15px;
   font: inherit;
   background-color: #d6564f;
   box-sizing: border-box;
   border-radius: 5px;
   border: none;
   outline: none;
+}
+
+.form__input:hover,
+.form__input:focus {
+  background-color: #f0d8d9;
 }
 
 .form__input.form__input-textarea {
@@ -101,6 +144,20 @@ a {
   color: #f48c8f;
 }
 
+.form__input:focus::-webkit-input-placeholder {
+  color: #814946;
+}
+.form__input:focus::-moz-placeholder {
+  color: #814946;
+}
+.form__input:focus::-ms-input-placeholder {
+  color: #814946;
+}
+.form__input:focus {
+  color: #814946;
+  outline: 1px solid #f4841f;
+}
+
 .form__btn {
   display: inline-block;
   vertical-align: middle;
@@ -118,10 +175,15 @@ a {
   cursor: pointer;
 }
 
+.form__btn:hover,
+.form__btn:focus {
+  background-color: #814946;
+}
+
 .feedback-contact__title {
   margin: 0;
-  margin-bottom: 15px;
-  font-family: "Lato - Black";
+  margin-bottom: 12px;
+  font-family: "Lato-Black";
   font-size: 18px;
   font-weight: 400;
   line-height: 17.86px;
@@ -130,7 +192,8 @@ a {
 
 .feedback-contact__text {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
+  text-align: justify;
   color: #f0d8d9;
 }
 
@@ -141,15 +204,19 @@ a {
 }
 
 .feedback-contact__link {
-  display: block;
   padding-left: 25px;
   color: #f0d8d9;
+}
+
+.feedback-contact__link:hover,
+.feedback-contact__link:focus {
+  text-decoration: underline;
 }
 
 .feedback-contact__link.feedback-contact__link--location {
   background-image: url("assets/img/location-icon.png");
   background-repeat: no-repeat;
-  background-position: 0, 0;
+  background-position: 2px, 2px;
 }
 
 .feedback-contact__link.feedback-contact__link--tel {
@@ -168,13 +235,21 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 20px;
   background-color: #2d303a;
 }
 
 .footer-social {
   margin-left: auto;
+}
+
+.social-icons__item {
+  margin-right: 8px;
+}
+
+.social-icons__item:last-child {
+  margin-right: 0;
 }
 
 .social-icons {
@@ -193,7 +268,6 @@ a {
   align-items: center;
   width: 30px;
   height: 30px;
-  margin-right: 8px;
   text-align: center;
   border: 1px solid #666d89;
   border-radius: 50%;
