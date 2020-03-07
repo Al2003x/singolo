@@ -1,11 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Singolo</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Singolo</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <h1 class="logo-title">singolo</h1>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">home</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#services" class="main-nav__link">services</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#portfolio" class="main-nav__link">portfolio</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#about" class="main-nav__link">about</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#contact" class="main-nav__link">contact </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="slider container">
+        <div class="slider__sliders">
+          <div class="slider-1"></div>
+        </div>
+        <button class="slider__btn slider__btn--prev" type="button">
+          Предыдущий
+        </button>
+        <button class="slider__btn slider__btn--next" type="button">
+          Следующий
+        </button>
+      </section>
+      <section class="services container" id="services">
+        <h2 class="section__title section__title-services">Our Services</h2>
+        <p class="section__text section__text-services">
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+          Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+          tortor mauris condimentum nibh.
+        </p>
+        <ul class="services__list">
+          <li class="services__item">
+            <h3 class="services__item-title">Custom Design</h3>
+            <p class="services__item-desc">
+              Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
+              laoreet, viverra lacus ut, ultrices velit.
+            </p>
+            <span class="services__icon services__icon--pen"></span>
+          </li>
+          <li class="services__item">
+            <h3 class="services__item-title">Inovative Ideas</h3>
+            <p class="services__item-desc">
+              Quisque luctus, quam eget molestie commodo, lacus purus cursus
+              purus, nec rutrum tellus dolor id lorem.
+            </p>
+            <span class="services__icon services__icon--bulb"></span>
+          </li>
+          <li class="services__item">
+            <h3 class="services__item-title">Love Is The Answer</h3>
+            <p class="services__item-desc">
+              Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
+              et consequat felis. Quisque condimentum.
+            </p>
+            <span class="services__icon services__icon--heart"></span>
+          </li>
+          <li class="services__item">
+            <h3 class="services__item-title">Responsive Layout</h3>
+            <p class="services__item-desc">
+              Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas
+              blandit nunc ligula. Praesent elit leo.
+            </p>
+            <span class="services__icon services__icon--phone"></span>
+          </li>
+          <li class="services__item">
+            <h3 class="services__item-title">24 / 7 Support</h3>
+            <p class="services__item-desc">
+              Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla
+              a sem erat. Pellentesque egestas venenatis lorem .
+            </p>
+            <span class="services__icon services__icon--bubble"></span>
+          </li>
+          <li class="services__item">
+            <h3 class="services__item-title">Feel Like A Star</h3>
+            <p class="services__item-desc">
+              Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
+              Fusce vitae aliquam tellus.
+            </p>
+            <span class="services__icon services__icon--star"></span>
+          </li>
+        </ul>
+      </section>
+      <section class="portfolio container" id="portfolio">
+        <h2 class="section__title section__title-portfolio">Portfolio</h2>
+        <p class="section__text section__text-portfolio">
+          Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia odio sem nec elit.
+        </p>
+        <ul class="portfolio-breadcrambs__list">
+          <li class="portfolio-breadcrumbs__item">
+            <a href="#" class="portfolio-breadcrumbs__link">All</a>
+          </li>
+          <li class="portfolio-breadcrumbs__item">
+            <a href="#" class="portfolio-breadcrumbs__link">Web Design</a>
+          </li>
+          <li class="portfolio-breadcrumbs__item">
+            <a href="#" class="portfolio-breadcrumbs__link">Graphic Design</a>
+          </li>
+          <li class="portfolio-breadcrumbs__item">
+            <a href="#" class="portfolio-breadcrumbs__link">Artwork</a>
+          </li>
+        </ul>
+        <article class="catalog-images">
+          <div class="catalog-images__img">
+            <img
+              src="assets/img/sin2-img1.png"
+              width="220"
+              height="187"
+              alt="images-1"
+            />
+          </div>
+          <div class="catalog-images__img">
+            <img
+              src="assets/img/sin2-img2.png"
+              width="220"
+              height="187"
+              alt="images-2"
+            />
+          </div>
+          <div class="catalog-images__img">
+            <img
+              src="assets/img/sin2-img3.png"
+              width="220"
+              height="187"
+              alt="images-3"
+            />
+          </div>
+          <div class="catalog-images__img">
+            <img
+              src="assets/img/sin2-img4.png"
+              width="220"
+              height="187"
+              alt="images-4"
+            />
+          </div>
+          <div class="catalog-images__img">
+            <img
+              src="assets/img/sin2-img5.png"
+              width="220"
+              height="187"
+              alt="images-5"
+            />
+          </div>
+          <div class="catalog-images__img">
+            <img
+              src="assets/img/sin2-img6.png"
+              width="220"
+              height="187"
+              alt="images-6"
+            />
+          </div>
+          <div class="catalog-images__img">
+            <img
+              src="assets/img/sin2-img7.png"
+              width="220"
+              height="187"
+              alt="images-7"
+            />
+          </div>
+          <div class="catalog-images__img">
+            <img
+              src="assets/img/sin2-img8.png"
+              width="220"
+              height="187"
+              alt="images-8"
+            />
+          </div>
+          <div class="catalog-images__img">
+            <img
+              src="assets/img/sin2-img9.png"
+              width="220"
+              height="187"
+              alt="images-9"
+            />
+          </div>
+          <div class="catalog-images__img">
+            <img
+              src="assets/img/sin2-img10.png"
+              width="220"
+              height="187"
+              alt="images-10"
+            />
+          </div>
+          <div class="catalog-images__img">
+            <img
+              src="assets/img/sin2-img11.png"
+              width="220"
+              height="187"
+              alt="images-11"
+            />
+          </div>
+          <div class="catalog-images__img">
+            <img
+              src="assets/img/sin2-img12.png"
+              width="220"
+              height="187"
+              alt="images-12"
+            />
+          </div>
+        </article>
+      </section>
+      <section class="about-us container" id="about">
+        <h2 class="section__title section__title-about">About Us</h2>
+        <p class="section__text section__text-about">
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+          Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+          tortor mauris condimentum nibh.
+        </p>
+        <article class="about-us__catalog">
+          <div class="about-us__card">
+            <div class="about-us__photo">
+              <img
+                src="assets/img/photo1.jpg"
+                alt="Adam Jensen"
+                class="about-us__photo-img"
+                width="300"
+                height="300"
+              />
+            </div>
+            <h4 class="about-us__title">Adam Jensen</h4>
+            <p class="about-us__text">
+              Quisque luctus, quam eget molestie commodo, lacus purus cursus
+              purus, nec rutrum tellus dolor id lorem.
+            </p>
+            <ul class="social-icons">
+              <li class="social-icons__item">
+                <a href="#" class="social-icons__btn" aria-label="facebook">
+                  <img
+                    src="assets/img/facebook-icon.png"
+                    alt="facebook"
+                    class="social-icons__btn-img"
+                  />
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="#" class="social-icons__btn" aria-label="google">
+                  <img
+                    src="assets/img/google-icon.png"
+                    alt="google"
+                    class="social-icons__btn-img"
+                  />
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="#" class="social-icons__btn" aria-label="twitter">
+                  <img
+                    src="assets/img/twitter-icon.png"
+                    alt="twitter"
+                    class="social-icons__btn-img"
+                  />
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="#" class="social-icons__btn" aria-label="linkedin">
+                  <img
+                    src="assets/img/linkedin-icon.png"
+                    alt="linkedin"
+                    class="social-icons__btn-img"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="about-us__card">
+            <div class="about-us__photo">
+              <img
+                src="assets/img/photo2.jpg"
+                width="300"
+                height="300"
+                alt="Adam Jensen"
+                class="about-us__photo-img"
+              />
+            </div>
+            <h4 class="about-us__title">Desmond Miles</h4>
+            <p class="about-us__text">
+              Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
+              laoreet, viverra lacus ut, ultrices velit.
+            </p>
+            <ul class="social-icons">
+              <li class="social-icons__item">
+                <a href="#" class="social-icons__btn" aria-label="facebook">
+                  <img
+                    src="assets/img/facebook-icon.png"
+                    alt="facebook"
+                    class="social-icons__btn-img"
+                  />
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="#" class="social-icons__btn" aria-label="google">
+                  <img
+                    src="assets/img/google-icon.png"
+                    alt="google"
+                    class="social-icons__btn-img"
+                  />
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="#" class="social-icons__btn" aria-label="twitter">
+                  <img
+                    src="assets/img/twitter-icon.png"
+                    alt="twitter"
+                    class="social-icons__btn-img"
+                  />
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="#" class="social-icons__btn" aria-label="linkedin">
+                  <img
+                    src="assets/img/linkedin-icon.png"
+                    alt="linkedin"
+                    class="social-icons__btn-img"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="about-us__card">
+            <div class="about-us__photo">
+              <img
+                src="assets/img/photo3.jpg"
+                width="300"
+                height="300"
+                alt="Scolara Visari"
+                class="about-us__photo-img"
+              />
+            </div>
+            <h4 class="about-us__title">Scolara Visari</h4>
+            <p class="about-us__text">
+              Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
+              et consequat felis. Quisque condimentum.
+            </p>
+            <ul class="social-icons">
+              <li class="social-icons__item">
+                <a href="#" class="social-icons__btn" aria-label="facebook">
+                  <img
+                    src="assets/img/facebook-icon.png"
+                    alt="facebook"
+                    class="social-icons__btn-img"
+                  />
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="#" class="social-icons__btn" aria-label="google">
+                  <img
+                    src="assets/img/google-icon.png"
+                    alt="google"
+                    class="social-icons__btn-img"
+                  />
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="#" class="social-icons__btn" aria-label="twitter">
+                  <img
+                    src="assets/img/twitter-icon.png"
+                    alt="twitter"
+                    class="social-icons__btn-img"
+                  />
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="#" class="social-icons__btn" aria-label="linkedin">
+                  <img
+                    src="assets/img/linkedin-icon.png"
+                    alt="linkedin"
+                    class="social-icons__btn-img"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section class="feedback container" id="contact">
+        <h2 class="section__title section__title-feedback">Get a Quote</h2>
+        <p class="section__text section__text-feedback">
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+          Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+          tortor mauris condimentum nibh.
+        </p>
+        <div class="feedback-columns">
+          <form action="#" method="POST" class="form">
+            <p class="form__item">
+              <input
+                type="text"
+                class="form__input"
+                name="name"
+                value=""
+                placeholder="Name (Required)"
+                pattern="[a-zA-Zа-яА-ЯёЁ]+"
+                required
+              />
+            </p>
+            <p class="form__item">
+              <input
+                type="email"
+                class="form__input"
+                name="email"
+                value=""
+                placeholder="Email (Required)"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required
+              />
+            </p>
+            <p class="form__item">
+              <input
+                type="text"
+                class="form__input"
+                name="subject"
+                value=""
+                placeholder="Subject"
+              />
+            </p>
+            <p class="form__item">
+              <textarea
+                class="form__input form__input-textarea"
+                name="feedback-textarea"
+                placeholder="Describe your project in detail..."
+              ></textarea>
+            </p>
+            <button class="form__btn" type="button">Submit</button>
+          </form>
+          <div class="feedback-contact">
+            <h2 class="feedback-contact__title">Contact Information</h2>
+            <p class="feedback-contact__text">
+              Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
+              Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla
+              sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
+              consequat felis.
+            </p>
+            <ul class="feedback-contact__list">
+              <li class="feedback-contact__item">
+                <a
+                  href="#"
+                  class="feedback-contact__link feedback-contact__link--location"
+                  >Elm St. 14/05 Lost City</a
+                >
+              </li>
+              <li class="feedback-contact__item">
+                <a
+                  href="tel:035283318635"
+                  class="feedback-contact__link feedback-contact__link--tel"
+                  >035283318635</a
+                >
+              </li>
+              <li class="feedback-contact__item">
+                <a
+                  href="mailto:info@singolo.com"
+                  class="feedback-contact__link feedback-contact__link--mail"
+                  >info@singolo.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer container">
+      <section class="footer-copyright">
+        <p class="footer-copyright__text">&copy; Copyright 2013</p>
+      </section>
+      <section class="footer-social">
+        <ul class="social-icons">
+          <li class="social-icons__item">
+            <a href="#" class="social-icons__btn" aria-label="facebook">
+              <img
+                src="assets/img/facebook-icon.png"
+                alt="facebook"
+                class="social-icons__btn-img"
+              />
+            </a>
+          </li>
+          <li class="social-icons__item">
+            <a href="#" class="social-icons__btn" aria-label="google">
+              <img
+                src="assets/img/google-icon.png"
+                alt="google"
+                class="social-icons__btn-img"
+              />
+            </a>
+          </li>
+          <li class="social-icons__item">
+            <a href="#" class="social-icons__btn" aria-label="twitter">
+              <img
+                src="assets/img/twitter-icon.png"
+                alt="twitter"
+                class="social-icons__btn-img"
+              />
+            </a>
+          </li>
+          <li class="social-icons__item">
+            <a href="#" class="social-icons__btn" aria-label="linkedin">
+              <img
+                src="assets/img/linkedin-icon.png"
+                alt="linkedin"
+                class="social-icons__btn-img"
+              />
+            </a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+  </body>
 </html>

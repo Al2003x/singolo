@@ -264,8 +264,10 @@ a {
 }
 
 .services__item-desc {
+  height: 60px;
   margin: 0;
   margin-left: 80px;
+  overflow: hidden;
 }
 
 .services__icon {
