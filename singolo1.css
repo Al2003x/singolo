@@ -1,3 +1,43 @@
+/* lato-300 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"),
+    url("assets/font/lato-v16-latin-300.woff2") format("woff2"),
+    url("assets/font/lato-v16-latin-300.woff") format("woff");
+}
+/* lato-regular - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url("assets/font/lato-v16-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("assets/font/lato-v16-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"),
+    url("assets/font/lato-v16-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("assets/font/lato-v16-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+  font-family: "Lato-Black";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Lato Black"), local("Lato-Black"),
+    url("assets/font/lato-v16-latin-900.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("assets/font/lato-v16-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 html,
 body {
   margin: 0;
@@ -40,7 +80,6 @@ a {
 .logo-title {
   margin: 0;
   position: relative;
-  font-family: "Lato", sans-serif;
   font-size: 25px;
   font-weight: 700;
   line-height: 6.32px;
@@ -52,8 +91,8 @@ a {
 .logo-title::after {
   position: absolute;
   content: "*";
-  top: -5px;
-  left: 108px;
+  top: 0px;
+  left: 105px;
   color: #f06c64;
 }
 
@@ -72,7 +111,7 @@ a {
 .main-nav__item {
   position: relative;
   padding-top: 10px;
-  padding-left: 14px;
+  padding-left: 17px;
   padding-right: 12px;
 }
 
@@ -118,7 +157,7 @@ a {
 
 .slider {
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 68px;
   background-color: #f06c64;
   border-bottom: 15px solid #ea676b;
 }
@@ -177,23 +216,20 @@ a {
 
 .services__title {
   margin: 0;
-  margin-bottom: 28px;
-  font-family: "Lato - Black", sans-serif;
+  margin-bottom: 27px;
+  font-family: "Lato-Black", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 17.86px;
-  letter-spacing: 1.5px;
   color: #666d89;
 }
 
 .services__text {
   margin: 0;
-  margin-bottom: 45px;
-  font-family: "Lato", sans-serif;
+  margin-bottom: 46px;
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
-  letter-spacing: -0.5px;
   color: #767e9e;
 }
 
@@ -210,7 +246,7 @@ a {
   position: relative;
   width: 299px;
   margin-right: 20px;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 
 .services__item:nth-child(3n) {
@@ -219,29 +255,25 @@ a {
 
 .services__item-title {
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 9px;
   margin-left: 80px;
-  font-family: "Lato - Black", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 17.86px;
   color: #666d89;
 }
 
 .services__item-desc {
+  height: 60px;
   margin: 0;
   margin-left: 80px;
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 21.56px;
-  letter-spacing: -0.25px;
+  overflow: hidden;
 }
 
 .services__icon {
   position: absolute;
   top: 0;
-  left: 2px;
+  left: 0;
   display: block;
   width: 55px;
   height: 55px;
