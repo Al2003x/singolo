@@ -149,9 +149,12 @@ a {
   color: #fff;
 }
 
-.main-nav__link:hover,
-.main-nav__link:focus {
+.main-nav__link--active {
   color: #f06c64;
+}
+
+.main-nav__link:hover {
+  color: #814946;
 }
 
 .slider {
