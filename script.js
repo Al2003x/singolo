@@ -1,11 +1,47 @@
 const nav = document.getElementById("main-nav");
 
-nav.addEventListener("click", event => {
-  nav
-    .querySelectorAll("a")
-    .forEach(el => el.classList.remove("main-nav__link--active"));
-  event.target.classList.add("main-nav__link--active");
+let Height = 0;
+const sections = document.querySelectorAll("section");
+sections.forEach(el => {
+  Height += el.offsetHeight;
 });
+let ScrollOffset =
+  document.documentElement.clientHeight - parseInt(Height / sections.length);
+ScrollOffset =
+  ScrollOffset < 30
+    ? document.querySelector("header").offsetHeight
+    : ScrollOffset;
+
+document.addEventListener("scroll", event => {
+  const curPos = window.scrollY + ScrollOffset;
+  const sectionList = document.querySelectorAll("section");
+  const Links = nav.querySelectorAll("a");
+  sectionList.forEach(el => {
+    if (el.offsetTop <= curPos && el.offsetTop + el.offsetHeight > curPos) {
+      Links.forEach(a => {
+        a.classList.remove("main-nav__link--active");
+        if (el.getAttribute("id") === a.getAttribute("href").substring(1)) {
+          a.classList.add("main-nav__link--active");
+        }
+      });
+    }
+  });
+
+  if (
+    document.documentElement.scrollTop +
+      document.documentElement.clientHeight ===
+    document.documentElement.scrollHeight
+  ) {
+    nav
+      .querySelector("a.main-nav__link--active")
+      .classList.remove("main-nav__link--active");
+    Links[Links.length - 1].classList.add("main-nav__link--active");
+  }
+  if (nav.querySelector("a.main-nav__link--active") === null) {
+    Links[0].classList.add("main-nav__link--active");
+  }
+});
+
 
 const portfolioMenu = document.querySelector(".portfolio-breadcrumbs__list");
 
