@@ -15,9 +15,9 @@
       <div class="container">
         <h1 class="logo-title">singolo</h1>
         <nav class="main-nav">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list" id="main-nav">
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">home</a>
+              <a href="#slider" class="main-nav__link main-nav__link--active">home</a>
             </li>
             <li class="main-nav__item">
               <a href="#services" class="main-nav__link">services</a>
@@ -36,16 +36,18 @@
       </div>
     </header>
     <main>
-      <section class="slider container">
-        <div class="slider__sliders">
-          <div class="slider-1"></div>
-        </div>
-        <button class="slider__btn slider__btn--prev" type="button">
-          Предыдущий
-        </button>
-        <button class="slider__btn slider__btn--next" type="button">
-          Следующий
-        </button>
+      <section class="slider container" id="slider">
+          <button class="slider__btn slider__btn--prev"></button>
+          <div class="slider__wrapper slider__wrapper--first">
+            <img class="slider__img slider__img--vert" src="assets/img/phone-vert.png" width="240" height="483" alt="Phone-vertical">
+            <img class="slider__img slider__img--hor" src="assets/img/phone-hor.png" width="484" height="240" alt="Phone-horizontal">
+          </div>
+          <div class="slider__wrapper slider__wrapper--second visually-hidden">
+            <img class="slider__img slider__img--bg" src="assets/img/slide-2_bg.png" width="797" height="483" alt="bg-slider-2">
+          </div>
+          <div class="slider__screen-off--ver visually-hidden"></div>
+          <div class="slider__screen-off--hor visually-hidden"></div>
+          <button class="slider__btn slider__btn--next"></button>
       </section>
       <section class="services container" id="services">
         <h2 class="section__title section__title-services">Our Services</h2>
@@ -112,9 +114,9 @@
           Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
           lacinia odio sem nec elit.
         </p>
-        <ul class="portfolio-breadcrambs__list">
+        <ul class="portfolio-breadcrumbs__list">
           <li class="portfolio-breadcrumbs__item">
-            <a href="#" class="portfolio-breadcrumbs__link">All</a>
+            <a href="#" class="portfolio-breadcrumbs__link portfolio-breadcrumbs__link--active">All</a>
           </li>
           <li class="portfolio-breadcrumbs__item">
             <a href="#" class="portfolio-breadcrumbs__link">Web Design</a>
@@ -528,5 +530,6 @@
         </ul>
       </section>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
