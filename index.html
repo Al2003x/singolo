@@ -17,7 +17,9 @@
         <nav class="main-nav">
           <ul class="main-nav__list" id="main-nav">
             <li class="main-nav__item">
-              <a href="#slider" class="main-nav__link main-nav__link--active">home</a>
+              <a href="#slider" class="main-nav__link main-nav__link--active"
+                >home</a
+              >
             </li>
             <li class="main-nav__item">
               <a href="#services" class="main-nav__link">services</a>
@@ -37,17 +39,35 @@
     </header>
     <main>
       <section class="slider container" id="slider">
-          <button class="slider__btn slider__btn--prev"></button>
-          <div class="slider__wrapper slider__wrapper--first">
-            <img class="slider__img slider__img--vert" src="assets/img/phone-vert.png" width="240" height="483" alt="Phone-vertical">
-            <img class="slider__img slider__img--hor" src="assets/img/phone-hor.png" width="484" height="240" alt="Phone-horizontal">
-          </div>
-          <div class="slider__wrapper slider__wrapper--second visually-hidden">
-            <img class="slider__img slider__img--bg" src="assets/img/slide-2_bg.png" width="797" height="483" alt="bg-slider-2">
-          </div>
-          <div class="slider__screen-off--ver visually-hidden"></div>
-          <div class="slider__screen-off--hor visually-hidden"></div>
-          <button class="slider__btn slider__btn--next"></button>
+        <button class="slider__btn slider__btn--prev"></button>
+        <div class="slider__wrapper slider__wrapper--first active">
+          <img
+            class="slider__img slider__img--vert"
+            src="assets/img/phone-vert.png"
+            width="240"
+            height="483"
+            alt="Phone-vertical"
+          />
+          <img
+            class="slider__img slider__img--hor"
+            src="assets/img/phone-hor.png"
+            width="484"
+            height="240"
+            alt="Phone-horizontal"
+          />
+          <div class="slider__screen-off--ver"></div>
+          <div class="slider__screen-off--hor"></div>
+        </div>
+        <div class="slider__wrapper slider__wrapper--second">
+          <img
+            class="slider__img slider__img--bg"
+            src="assets/img/slider_bg-2.png"
+            width="1020"
+            height="594"
+            alt="bg-slider-2"
+          />
+        </div>
+        <button class="slider__btn slider__btn--next"></button>
       </section>
       <section class="services container" id="services">
         <h2 class="section__title section__title-services">Our Services</h2>
@@ -116,7 +136,11 @@
         </p>
         <ul class="portfolio-breadcrumbs__list">
           <li class="portfolio-breadcrumbs__item">
-            <a href="#" class="portfolio-breadcrumbs__link portfolio-breadcrumbs__link--active">All</a>
+            <a
+              href="#"
+              class="portfolio-breadcrumbs__link portfolio-breadcrumbs__link--active"
+              >All</a
+            >
           </li>
           <li class="portfolio-breadcrumbs__item">
             <a href="#" class="portfolio-breadcrumbs__link">Web Design</a>
@@ -409,26 +433,24 @@
           tortor mauris condimentum nibh.
         </p>
         <div class="feedback-columns">
-          <form action="#" method="POST" class="form">
+          <form action="#" method="POST" class="form" id="form">
             <p class="form__item">
               <input
                 type="text"
-                class="form__input"
+                class="form__input" id="form-name"
                 name="name"
                 value=""
                 placeholder="Name (Required)"
-                pattern="[a-zA-Zа-яА-ЯёЁ]+"
                 required
               />
             </p>
             <p class="form__item">
               <input
                 type="email"
-                class="form__input"
+                class="form__input" id="form-mail"
                 name="email"
                 value=""
                 placeholder="Email (Required)"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 required
               />
             </p>
@@ -436,6 +458,7 @@
               <input
                 type="text"
                 class="form__input"
+                id="form-subject"
                 name="subject"
                 value=""
                 placeholder="Subject"
@@ -444,11 +467,12 @@
             <p class="form__item">
               <textarea
                 class="form__input form__input-textarea"
+                id="form-message"
                 name="feedback-textarea"
                 placeholder="Describe your project in detail..."
               ></textarea>
             </p>
-            <button class="form__btn" type="button">Submit</button>
+            <button class="form__btn" id="btn" type="submit">Submit</button>
           </form>
           <div class="feedback-contact">
             <h2 class="feedback-contact__title">Contact Information</h2>
@@ -481,6 +505,24 @@
                 >
               </li>
             </ul>
+          </div>
+        </div>
+        <div id="modal" class="hidden">
+          <div id="modal-content">
+            <div class="modal__close">
+              <span class="close">&times;</span>
+            </div>
+            <h3 class="modal__descr">Письмо отправлено</h3>
+            <p class="modal__descr"><span id="modal-subject"></span></p>
+            <p class="modal__descr"><span id="modal-describe"></span></p>
+            <button
+              class="modal__btn"
+              type="button"
+              name="button"
+              id="close-btn"
+            >
+              ОК
+            </button>
           </div>
         </div>
       </section>
