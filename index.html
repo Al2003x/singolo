@@ -38,36 +38,36 @@
       </div>
     </header>
     <main>
-      <section class="slider container" id="slider">
-        <button class="slider__btn slider__btn--prev"></button>
-        <div class="slider__wrapper slider__wrapper--first active">
-          <img
-            class="slider__img slider__img--vert"
-            src="assets/img/phone-vert.png"
-            width="240"
-            height="483"
-            alt="Phone-vertical"
-          />
-          <img
-            class="slider__img slider__img--hor"
-            src="assets/img/phone-hor.png"
-            width="484"
-            height="240"
-            alt="Phone-horizontal"
-          />
-          <div class="slider__screen-off--ver"></div>
-          <div class="slider__screen-off--hor"></div>
-        </div>
-        <div class="slider__wrapper slider__wrapper--second">
-          <img
-            class="slider__img slider__img--bg"
-            src="assets/img/slider_bg-2.png"
-            width="1020"
-            height="594"
-            alt="bg-slider-2"
-          />
-        </div>
-        <button class="slider__btn slider__btn--next"></button>
+      <section class="slider" id="slider">
+          <button class="slider__btn slider__btn--prev"></button>
+          <div class="slider__wrapper slider__wrapper--first active">
+            <img
+              class="slider__img slider__img--vert"
+              src="assets/img/phone-vert.png"
+              width="240"
+              height="483"
+              alt="Phone-vertical"
+            />
+            <img
+              class="slider__img slider__img--hor"
+              src="assets/img/phone-hor.png"
+              width="484"
+              height="240"
+              alt="Phone-horizontal"
+            />
+            <div class="slider__screen-off--ver"></div>
+            <div class="slider__screen-off--hor"></div>
+          </div>
+          <div class="slider__wrapper slider__wrapper--second">
+            <img
+              class="slider__img slider__img--bg"
+              src="assets/img/slider_bg-2.png"
+              width="1020"
+              height="600"
+              alt="bg-slider-2"
+            />
+          </div>
+          <button class="slider__btn slider__btn--next"></button>
       </section>
       <section class="services container" id="services">
         <h2 class="section__title section__title-services">Our Services</h2>
@@ -437,7 +437,8 @@
             <p class="form__item">
               <input
                 type="text"
-                class="form__input" id="form-name"
+                class="form__input"
+                id="form-name"
                 name="name"
                 value=""
                 placeholder="Name (Required)"
@@ -447,7 +448,8 @@
             <p class="form__item">
               <input
                 type="email"
-                class="form__input" id="form-mail"
+                class="form__input"
+                id="form-mail"
                 name="email"
                 value=""
                 placeholder="Email (Required)"

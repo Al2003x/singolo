@@ -183,14 +183,18 @@ a {
   position: relative;
   width: 1020px;
   height: 600px;
+  margin: 0 auto;
   transition: 1s ease-in-out;
   scroll-margin-top: 95px;
 }
 
+
 .slider__wrapper {
   display: none;
+  width: 1020px;
+  height: 600px;
+  margin: 0 auto;
   position: relative;
-  width: 100%;
   animation: 1s ease-out;
 }
 
